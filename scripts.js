@@ -31,7 +31,9 @@ request.onload = function () {
       card.appendChild(p);
     });
   } else {
-    console.log('error');
+    const errorMessage = document.createElement('marquee');
+    errorMessage.textContent = `It's broken`;
+    app.appendChild(errorMessage);
   }
 }
 
